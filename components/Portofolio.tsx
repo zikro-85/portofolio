@@ -44,8 +44,8 @@ export const Portofolio = () => {
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color}`;
 
   return (
-    <motion.section id='#portofolio' className='py-32  text-white' style={{backgroundImage}}>
-      <div className="max-w-7xl mx-32 px-auto grid lg:grid-cols-2 gap-12">
+    <motion.section id='#portofolio' className='mx-auto py-32 text-white' style={{backgroundImage}}>
+      <div className="max-w-7xl grid lg:grid-cols-2 gap-12 px-32">
         <div>
           <h2 className='text-6xl font-bold mb-10'>Selected <span className='text-purple-400'>Project</span></h2>
           {projects.map((project) => (
@@ -73,7 +73,7 @@ export const Portofolio = () => {
       <Image 
           src={selectedProject.image.src}
           alt={selectedProject.title}
-          className='rounded-xl shadow-lg transition-opacity duration-500 ease-in-out my-auto mx-auto'
+          className='rounded-xl shadow-lg transition-opacity duration-500 ease-in-out mx-auto'
           width={400}
           height={200}
         />
