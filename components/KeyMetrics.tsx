@@ -6,8 +6,8 @@ import { motion, spring, useInView } from "framer-motion";
 const metrics = [
   {
     id: 1,
-    value: '0+',
-    label: 'Years of Experience',
+    value: '4+',
+    label: 'Month of Experience',
     description: 'Dedicated to honing my skill in full-stack development.',
   },
   {
@@ -30,7 +30,7 @@ const metrics = [
   },
   {
     id: 5,
-    value: '10+',
+    value: '4+',
     label: 'Commit on GitHub',
     description: 'Active contributor to open source and personal project.',
   },
@@ -47,7 +47,7 @@ export const KeyMetrics = () => {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{duration: 0.8}}
       className='px-32 py-32 text-white glass' 
-      id='about'
+      id='#about'
     >
       <div className='container mx-auto'>
       <motion.h2

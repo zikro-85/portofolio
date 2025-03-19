@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from 'react'
-import Link from 'next/link'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-scroll'
 
 const navLinks = [
   { title: "About", path: "#about" },
@@ -29,8 +29,13 @@ const Navbar = () => {
       <ul className='flex flex-row p-2 space-x-8'>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <Link href={link.path} className='transform hover:text-white/50 transition-all 
-                                              duration-300 ease-in-out'>
+            <Link 
+              to={link.path}
+              spy={true} 
+              smooth={true}
+              offset={20}
+              duration={500}
+              className='transform cursor-pointer hover:text-white/50 transition-all duration-300 ease-in-out'>
               {link.title}
             </Link>
           </li>
@@ -46,8 +51,14 @@ const Navbar = () => {
         <ul className='flex flex-col items-center justify-center space-y-8 h-full'>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <Link href={link.path} onClick={closeNav} className='transform hover:text-white/50 transition-all 
-                                                                 duration-300 ease-in-out'>
+            <Link 
+              to={link.path}
+              spy={true} 
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={closeNav} 
+              className='transform cursor-pointer hover:text-white/50 transition-all duration-300 ease-in-out'>
               {link.title}
             </Link>
           </li>

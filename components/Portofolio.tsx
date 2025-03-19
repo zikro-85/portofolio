@@ -2,9 +2,8 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
-import project1 from "@/assets/proj8.png"
-import project2 from "@/assets/proj6.png"
-import project3 from "@/assets/proj7.png"
+import project1 from "@/assets/proj1.png"
+import project2 from "@/assets/proj2.png"
 import { useMotionTemplate, useMotionValue, motion, animate, easeInOut } from 'framer-motion';
 
 const projects = [
@@ -21,13 +20,6 @@ const projects = [
     title:"Course Website", 
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
     image: project2 
-  },
-  {
-    id: 3, 
-    year: 2025, 
-    title:"To Do List", 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    image: project3
   },
 ]
 
@@ -52,7 +44,7 @@ export const Portofolio = () => {
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color}`;
 
   return (
-    <motion.section id='portofolio' className='py-32  text-white' style={{backgroundImage}}>
+    <motion.section id='#portofolio' className='py-32  text-white' style={{backgroundImage}}>
       <div className="max-w-7xl mx-32 px-auto grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className='text-6xl font-bold mb-10'>Selected <span className='text-purple-400'>Project</span></h2>
@@ -81,9 +73,9 @@ export const Portofolio = () => {
       <Image 
           src={selectedProject.image.src}
           alt={selectedProject.title}
-          className='rounded-xl shadow-lg transition-opacity duration-500 ease-in-out'
-          width={800}
-          height={450}
+          className='rounded-xl shadow-lg transition-opacity duration-500 ease-in-out my-auto mx-auto'
+          width={400}
+          height={200}
         />
       </div>
     </motion.section>

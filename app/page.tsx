@@ -5,7 +5,6 @@ import Stack from '@/components/Stack'
 import { LogoAnimation } from '@/components/LogoAnimation'
 import { Portofolio } from '@/components/Portofolio'
 import { KeyMetrics } from '@/components/KeyMetrics'
-import { Service } from '@/components/Service'
 import { Contact } from '@/components/Contact'
 
 const home = () => {
@@ -17,7 +16,6 @@ const home = () => {
     <LogoAnimation />
     <Portofolio />
     <KeyMetrics />
-    <Service />
     <Contact />
     </>
   )

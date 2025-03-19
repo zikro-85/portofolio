@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const Contact = () => {
   return (
-    <section id='contact' className='overflow-x-clip py-32 text-white max-w-[1200px] mx-auto px-4'>
+    <section id='#contact' className='overflow-x-clip py-32 text-white max-w-[1200px] mx-auto px-4'>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 20}}
@@ -17,7 +17,7 @@ export const Contact = () => {
             initial={{opacity: 0, x: -20}}
             whileInView={{ opacity: 1, x: 0}}
             transition={{ duration: 0.6, delay: 0.2}}
-            className='text-7xl font-bold text-gray-300'
+            className='text-7xl font-bold text-gray-300 flex justify-center gap-3'
           >
             Get in <span className='text-purple-500'>touch</span>
           </motion.h2>
@@ -48,9 +48,9 @@ export const Contact = () => {
             <div className='space-y-2'>
               <p className='text-lg text-gray-300'>Office</p>
               <address className='text-xl not-italic leading-relaxed'>
-                Jln. Padang-Solok no.23 Tanjung Bingkuang <br />
-                Sumatera Barat <br />
-                Indonesia
+                6JP9+5QQ <br />
+                Tj. Bingkung, Kec. Kubung, Kabupaten Solok <br /> 
+                Sumatera Barat, Indonesia
               </address>
             </div>
           </motion.div>
@@ -62,7 +62,7 @@ export const Contact = () => {
           className='w-full h-full min-h-[400px] rounded-2xl overflow-hidden'
         >
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d997.3695794335974!2d100.61867928921116!3d-0.7480063401230802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwNDQnNTQuNCJTIDEwMMKwMzcnMDcuNyJF!5e0!3m2!1sid!2sid!4v1741423316874!5m2!1sid!2sid" 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.4628278852774!2d100.61932008926652!3d-0.7648556698088012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4cd03fc4384db%3A0xecc12ee16d70b76!2sZulfa%20Homestay!5e0!3m2!1sid!2sid!4v1742389034277!5m2!1sid!2sid" 
           width="100%" 
           height="100%" 
           style={{ border: 0}}
