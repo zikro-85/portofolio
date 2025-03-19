@@ -69,7 +69,7 @@ export const Contact = () => {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            className='px-5 rounded-[50px]'
+            className='px-5 rounded-[50px] mx-auto'
           >
           </iframe>
         </motion.div>
