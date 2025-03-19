@@ -45,7 +45,7 @@ export const Portofolio = () => {
 
   return (
     <motion.section id='#portofolio' className='mx-auto py-32 text-white' style={{backgroundImage}}>
-      <div className="max-w-7xl grid lg:grid-cols-2 gap-12 px-32">
+      <div className="max-w-7xl grid lg:grid-cols-2 gap-12 px-15">
         <div>
           <h2 className='text-6xl font-bold mb-10'>Selected <span className='text-purple-400'>Project</span></h2>
           {projects.map((project) => (

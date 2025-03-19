@@ -46,10 +46,10 @@ export const KeyMetrics = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{duration: 0.8}}
-      className='px-32 py-32 text-white glass' 
+      className='py-32 text-white glass' 
       id='#about'
     >
-      <div className='container mx-auto'>
+      <div className='container mx-auto px-15'>
       <motion.h2
         initial={{opacity: 0, y: 20}}
         animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 20}}
